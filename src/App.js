@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Topbar from "./topbar/Topbar.jsx"
+import Home from './pages/home/Home.jsx'
+// import Single from "./pages/single/Single.jsx";
+import Post from "./post/Post.jsx";
+import Write from "./pages/write/Write.jsx";
+import Settings from "./settings/Settings.jsx";
+import Login from "./pages/login/Login.jsx";
+// import Register from "./pages/register/Register.jsx";
+// import {
+//   BrowserRouter as Router,
+  
+//   Route,
+  
+  
+// } from "react-router-dom";
+
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+       <Topbar/>
+       <Home/>
+      <Post/>
+       <Write/>
+      <Settings/>
+      <Login/>
+     
+     </>
+       
+    
   );
 }
 
